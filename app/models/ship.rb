@@ -4,11 +4,11 @@ class Ship
 
   SHIPS = []
 
-  def initialize(details)
+  def initialize(args)
     #binding.pry
-    @name = details[:name]
-    @type = details[:type]
-    @booty = details[:booty]
+    @name = args[:name]
+    @type = args[:type]
+    @booty = args[:booty]
     SHIPS << self
   end
 
